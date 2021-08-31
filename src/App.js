@@ -5,9 +5,9 @@ import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
-import Resume from "./Components/Resume";
+// import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
-import Portfolio from "./Components/Portfolio";
+// import Portfolio from "./Components/Portfolio";
 import Product from "./Components/Product";
 
 class App extends Component {
@@ -18,13 +18,13 @@ class App extends Component {
       resumeData: {}
     };
 
-    ReactGA.initialize("UA-110570651-1");
-    ReactGA.pageview(window.location.pathname);
+    // ReactGA.initialize("UA-110570651-1");
+    // ReactGA.pageview(window.location.pathname);
   }
 
   getResumeData() {
     $.ajax({
-      url: "./resumeData.json",
+      url: "https://nordicgiant2.github.io/react-nice-resume-page/resumeData.json",
       dataType: "json",
       cache: false,
       success: function(data) {
@@ -35,6 +35,7 @@ class App extends Component {
         alert(err);
       }
     });
+    // return {}
   }
 
   componentDidMount() {

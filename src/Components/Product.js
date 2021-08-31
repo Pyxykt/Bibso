@@ -6,7 +6,7 @@ const Product = () => {
     return (
         <section id="product">
             {
-                image.map(item => <img src={item} alt="img" />)
+                image.map(item => (<img key={item} src={item} alt="img" />))
             }
         </section>
     )

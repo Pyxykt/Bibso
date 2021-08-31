@@ -108,18 +108,19 @@ class Contact extends Component {
               <div className="widget widget_contact">
                 <h4>Address and Phone</h4>
                 <p className="address">
-                  {name}
+                Bibso Pharmaceutical PVT. LTD.
                   <br />
-                  {street} <br />
-                  {city}, {state} {zip}
+                  PLOT NO - 353, 1st Floor, <br />
+                  Industrial Area, Phase -1<br/>
+                  Panchkula Haryana - 134113
                   <br />
-                  <span>{phone}</span>
+                  <span>Contact No - 9472708065</span>
                 </p>
               </div>
 
               <div className="widget widget_tweets">
-                <h4 className="widget-title">Latest Tweets</h4>
-                <ul id="twitter">
+               {/*} <h4 className="widget-title">Latest Tweets</h4>
+                {/* <ul id="twitter">
                   <li>
                     <span>
                       This is Photoshop's version of Lorem Ipsum. Proin gravida
@@ -143,7 +144,7 @@ class Contact extends Component {
                       <a href="./">3 Days Ago</a>
                     </b>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </aside>
           </Slide>

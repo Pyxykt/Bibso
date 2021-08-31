@@ -5,16 +5,16 @@ class About extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const name = this.props.data.name;
-    const profilepic = "images/" + this.props.data.image;
-    const bio = this.props.data.bio;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
+    // const name = this.props.data.name;
+    // const profilepic = "images/" + this.props.data.image;
+    // const bio = this.props.data.bio;
+    // const street = this.props.data.address.street;
+    // const city = this.props.data.address.city;
+    // const state = this.props.data.address.state;
+    // const zip = this.props.data.address.zip;
     const phone = this.props.data.phone;
     const email = this.props.data.email;
-    const resumeDownload = this.props.data.resumedownload;
+    // const resumeDownload = this.props.data.resumedownload;
 
     return (
       <section id="about">
@@ -34,22 +34,24 @@ class About extends Component {
 
 Bibso Pharmaceutical Private Limited's Annual General Meeting (AGM) was last held on N/A and as per records from Ministry of Corporate Affairs (MCA), its balance sheet was last filed on N/A.
 
-Directors of Bibso Pharmaceutical Private Limited are Soni Choudhary and Kailash Kumar Mishra.</p>
+Directors of Bibso Pharmaceutical Private Limited are Soni Choudhary and Bibhash Kumar Choudhary.</p>
               <div className="row">
                 <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
-                    <span>Bibso Pharmaceutical</span>
+                    <span>Bibso Pharmaceutical PVT. LTD.</span>
                     <br />
                     <span>
-                       RIT THANA ROAD 
+                       PLOT NO - 353, 1st Floor 
                       <br />
-                      Jamshedpur Jharkhand, 831013
+                      Industrial Area, Phase -1 
+                      <br/>
+                      Panchkula Haryana - 134113
                     </span>
                     <br />
-                    <span>{phone}</span>
+                    <span>9472708065</span>
                     <br />
-                    <span>{email}</span>
+                    <span>bibsojsr@gmail.com</span>
                   </p>
                 </div>
                 <div className="columns download">

@@ -4,8 +4,24 @@ import Fade from "react-reveal";
 class Footer extends Component {
   render() {
     if (!this.props.data) return null;
-
-    const networks = this.props.data.social.map(function (network) {
+    const social = [
+      {
+        "name": "facebook",
+        "url": "https://github.com/nordicgiant2/react-nice-resume",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "twitter",
+        "url": "http://twitter.com",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "instagram",
+        "url": "http://instagram.com/tbaker_x",
+        "className": "fa fa-instagram"
+      }
+    ]
+    const networks = social.map(function (network) {
       return (
         <li key={network.name}>
           <a href={network.url}>
@@ -22,7 +38,7 @@ class Footer extends Component {
             <div className="twelve columns">
               <ul className="social-links">{networks}</ul>
 
-              <ul className="copyright">
+              {/* <ul className="copyright">
                 <li>&copy; Copyright 2021 Nordic Giant</li>
                 <li>
                   Design by{" "}
@@ -30,7 +46,7 @@ class Footer extends Component {
                     Styleshout
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </Fade>
 
