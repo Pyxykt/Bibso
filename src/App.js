@@ -27,10 +27,10 @@ class App extends Component {
       url: "https://nordicgiant2.github.io/react-nice-resume-page/resumeData.json",
       dataType: "json",
       cache: false,
-      success: function(data) {
+      success: function (data) {
         this.setState({ resumeData: data });
       }.bind(this),
-      error: function(xhr, status, err) {
+      error: function (xhr, status, err) {
         console.log(err);
         alert(err);
       }
@@ -45,13 +45,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header data={this.state.resumeData.main} />
-        <About data={this.state.resumeData.main} />
+        {/* <Header data={this.state.resumeData.main} /> */}
+        {/* <About data={this.state.resumeData.main} /> */}
         {/* <Resume data={this.state.resumeData.resume} /> */}
-        <Product />
+        {/* <Product /> */}
         {/* <Portfolio data={this.state.resumeData.portfolio} /> */}
-        <Contact data={this.state.resumeData.main} />
-        <Footer data={this.state.resumeData.main} />
+        {/* <Contact data={this.state.resumeData.main} /> */}
+        {/* <Footer data={this.state.resumeData.main} /> */}
+        <div style={{ width: "100%", height: "100vh", display: "flex", alignItems: 'center', justifyContent: 'center' }}>
+          <h1 style={{color:'white',fontSize:'50px'}}>Coming Soon</h1>
+        </div>
       </div>
     );
   }
